@@ -16,6 +16,7 @@ body {
 
   display: grid;
   grid-template-columns: 200px auto;
+  grid-template-rows: 250px auto;
   grid-template-areas: 
     "aside header"
     "aside main";
@@ -31,6 +32,10 @@ aside {
 header {
   background-color: var(--header-bg-color);
   grid-area: header;
+
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 1fr 1fr;
 }
 main {
   background-color: var(--main-bg-color);
@@ -76,6 +81,59 @@ nav a:hover, .logo a:hover {
 /* :not(:first-child) */
 nav ul {
   margin-top: 20px;
+}
+
+.search-row {
+
+  padding: 10px;
+
+  display: grid;
+  grid-template-columns: 100fr 1fr;
+  align-items: center;
+  gap: 15px;
+}
+
+.search {
+  padding-left: 10px;
+  display:grid;
+  grid-template-columns: 40px auto;
+  justify-self: stretch;
+  align-items: center;
+}
+
+.search input {
+  border-radius: 15px;
+  border: 2px solid #e0e7ef;
+  background-color: #e0e7ef;
+  color: black;
+  height: 35px;
+  padding: 0 12px 0 12px;
+  font-size: 16px;
+}
+.search input:focus {
+  border-color: var(--sidebar-bg-color);
+  outline: 0;
+  -webkit-box-shadow: inset 0 1px 1px rgba(0,0,0,.075), 0 0 8px rgba(102, 175, 233, 0.6);
+  box-shadow: inset 0 1px 1px rgba(0,0,0,.075), 0 0 8px rgba(102, 175, 233, 0.6);
+}
+
+.mini-profile {
+  display:grid;
+  grid-template-columns: auto auto auto;
+  align-items: center;
+  /* gap: 10px; */
+  width: 250px;
+  padding-right: 10px;
+  justify-self: end;
+  justify-items: center;
+}
+
+.rounded {
+  border-radius: 50%;
+}
+.name {
+  font-weight:500;
+  font-size: 18px;
 }
 
 
