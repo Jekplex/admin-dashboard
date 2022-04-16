@@ -16,11 +16,11 @@ body {
 
   display: grid;
   grid-template-columns: 200px auto;
-  grid-template-rows: 250px auto;
+  grid-template-rows: 200px auto;
   grid-template-areas: 
     "aside header"
     "aside main";
-
+    
   height: 100vh;
 
 }
@@ -85,7 +85,7 @@ nav ul {
 
 .search-row {
 
-  padding: 10px;
+  padding: 0 10px 0 10px;
 
   display: grid;
   grid-template-columns: 100fr 1fr;
@@ -94,7 +94,6 @@ nav ul {
 }
 
 .search {
-  padding-left: 10px;
   display:grid;
   grid-template-columns: 40px auto;
   justify-self: stretch;
@@ -123,9 +122,15 @@ nav ul {
   align-items: center;
   /* gap: 10px; */
   width: 250px;
-  padding-right: 10px;
   justify-self: end;
   justify-items: center;
+}
+
+.pad-left {
+  padding-left: 10px;
+}
+.pad-right {
+  padding-right: 10px;
 }
 
 .rounded {
@@ -135,5 +140,47 @@ nav ul {
   font-weight:500;
   font-size: 18px;
 }
+
+.actions-row {
+  display:grid;
+  grid-template-columns: 1fr 1fr;
+  padding: 0 10px 0 10px;
+  justify-items: center;
+}
+.actions-row button {
+  border: none;
+  background-color: var(--sidebar-bg-color);
+  color: white;
+  cursor: pointer;
+  padding: 11px;
+  font-size: 14px;
+  border-radius: 18px;
+  width: 100px;
+  font-weight: 500;
+}
+
+.hi-there-section {
+  display:grid;
+  grid-template-columns: 100px auto;
+  align-items: center;
+  /* gap: 10px; */
+  justify-items: center;
+}
+
+.hi-there-text div:last-child { 
+  font-size: 24px;
+  
+}
+
+.action-buttons {
+  display:grid;
+  grid-template-columns: repeat(3, auto);
+  align-items: center;
+  justify-items: center;
+  justify-content: end;
+  gap: 10px;
+  
+}
+
 
 
