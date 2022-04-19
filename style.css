@@ -224,12 +224,12 @@ nav ul {
   /* margin-bottom: 5px; */
 }
 .project-item img {
-  cursor: pointer;
   padding: 10px;
   border-radius: 50%;
 }
 .project-item img:hover {
   background-color: rgb(200, 200, 200);
+  cursor: pointer;
 }
 
 .project-list {
@@ -291,7 +291,12 @@ main {
   grid-template-columns: 50px 1fr;
   gap: 10px;
   align-items: center;
-  
+  padding:10px;
+  border-radius: 5px;
+}
+.trending-item:hover {
+  background-color: rgb(200, 200, 200);
+  cursor: pointer;
 }
 .trending-item:not(:last-child) {
   margin-bottom: 10px;
