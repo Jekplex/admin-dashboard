@@ -271,6 +271,7 @@ main {
     "projects announce"
     "projects trending";
   align-items: start;
+  grid-template-columns: 2fr 1fr;
 
 }
 .your-projects {
