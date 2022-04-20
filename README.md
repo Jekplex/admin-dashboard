@@ -1,2 +1,4 @@
 # admin-dashboard
 The Odin Project // Admin Dashboard
+
+This Admin Dashboard is all about getting practice with CSS Grid. There were multiple instances where I desperately wanted to use Flexbox. In fact, I think the use of Flexbox would have been more ideal in some cases. Personally, I've found that grids are great for two-dimensional layouts. This is an area where Flexbox is limited as Flexbox is only one-dimensional. By doing this project, I have found a strong appreciation for Flexbox (even though I never used it in this project, though I wanted to). Flexbox is better at dealing with anything on a smaller scale. Moving forward, I plan on using both these methods in my designs. Grids for large two-dimensional sections, especially page layouts. Whereas Flexbox will be used for smaller elements like buttons within these sections. The combination of CSS Grid and Flexbox seems to be the best approach moving forward.
